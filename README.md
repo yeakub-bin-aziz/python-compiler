@@ -48,6 +48,9 @@ This project is a PHP web-based **Python code compiler** that allows users to wr
 - **Python-Only Support**: Currently supports Python exclusively.
 - **File Size Limit**: Uploaded files are limited to 128MB.
 
+## Demo
+- **Live Demo**: https://compiler.yeakub.xyz/python/
+
 - ## Installation & Requirements
 
 ### Requirements
@@ -57,7 +60,7 @@ This project is a PHP web-based **Python code compiler** that allows users to wr
 1. **Download or Clone the Project**
    - Clone the repository using Git:
      ```bash
-     git clone <repository-url>
+     git clone https://github.com/yeakub-bin-aziz/python-compiler
      ```
    - Or download the ZIP file from GitHub and extract it.
 
@@ -76,7 +79,7 @@ This project is a PHP web-based **Python code compiler** that allows users to wr
 ## Project Status
 - **Last Updated**: November 26, 2024
 - **Status**: Archived  
-  *(The service remains operational but will no longer receive updates.)*
+  *(The project is no longer mantained!)*
 
 ## Conclusion
 This web application provides a secure and user-friendly platform for Python development, offering robust features and seamless execution. While currently focused on Python, it has room for future enhancements and additional language support.
