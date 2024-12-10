@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #343a40;
+}
+
+#codeEditor {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.run-button {
+    font-size: 16px;
+}
+
+.output {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+    white-space: pre-wrap; /* To handle long lines */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    color: #343a40;
+    margin-top: 10px;
+}
